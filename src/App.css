@@ -1,0 +1,150 @@
+.mainNave{
+  display: flex;
+  justify-content: space-between;
+}
+
+.qwigley-regular{
+  font-family: "Qwigley", cursive;
+        font-weight: 50px;
+        font-style: normal;
+        color: #FFB30E;
+        font-size: 100px;
+        /* padding:15px ; */
+}
+
+.homeBra{
+  margin: 10px;
+}
+
+.contOne{
+  background-color: whitesmoke;
+  height: 99px;
+}
+
+.mainBanner{
+  place-items: center;
+  background-color: #f3c947e3;
+  text-align: center;
+  height: 250px;
+  text-indent: 50px
+}
+
+.bannerSpanOne{
+  font-family: "Qwigley", cursive;
+  /* padding: 88px; */
+  font-size: 71px;
+}
+
+.bannerSpanTwo{
+  /* margin-top: -92px; */
+  margin-bottom: 1rem;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.square {
+  background: green;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+} 
+
+/* PRODUCT CARD */
+.card {
+  position: relative;
+  width: 300px;
+  min-height: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+
+  > .card-header {
+    width: 100%;
+    height: 200px;
+    /* background-color: lightgreen; */
+    border-radius: 20px !important;
+
+    > img {
+      width: 100%;
+      height: 189px;
+      border-radius: 10px !important;
+    }
+  }
+
+  > .card-body {
+    /* > .product_name {
+    }
+    > .product_description {
+    } */
+    > .product_price {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: gray;
+    }
+  }
+}
+
+/* GRID */
+.demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer{
+  height: 100px;
+  padding: 30px;
+  font-size: 71px;
+  text-align: center;
+  font-family: "Qwigley", cursive;
+  background-color: #f3c947e3;
+}
+
+/* ----------------------- */
+/* CART - CARD - CLASS */
+
+
+.cart-container{
+  padding: 10px;
+}
+  /* .cart-card{
+    position: relative;
+    width: 300px;
+    min-height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  
+
+  >.cart-card-header{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px !important;
+
+    > img {
+      width: 100%;
+      height: 189px;
+      border-radius: 10px !important;
+    }
+  }
+  
+  } */
+
+  .total-Amount-div{
+    text-align: center;
+  }
