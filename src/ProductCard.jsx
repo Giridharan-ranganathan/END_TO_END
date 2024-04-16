@@ -1,7 +1,7 @@
 import React, { useState, useRef, useContext } from 'react';
 import { CartContext } from './App';
 
-export default function ProductCard({service }) {
+export const ProductCard = ({service }) => {
   const {cart , setCart} = useContext(CartContext);
   const textRef = useRef();
   
@@ -37,14 +37,23 @@ export default function ProductCard({service }) {
         <p className="product_price mb-10">${service.price}</p>
       </div>
       <div className="addCartBtn text-center">
-        <button
+        { <button
           type="button"
-          className="btn btn-outline-dark"
+          className="btn btn-outline-dark "
           onClick={addToCart}
           ref={textRef}
         >
           {cart.includes(service) ? 'Remove' : 'Add To Cart'}
-        </button>
+        </button>}
+        {/* {cart.includes(service) ? (<button
+          type="button"
+          className="btn btn-outline-dark"
+          onClick={removeCart}
+        >Remove</button>) : (<button
+        type="button"
+        className="btn btn-outline-dark"
+        onClick={addCart}
+      >Add to Cart</button>) } */}
       </div>
     </div>
   );

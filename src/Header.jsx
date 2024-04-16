@@ -1,6 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import {useState} from 'react';
-import ProductCard from './ProductCard';
 
 export default function Header({cart}) {
  
