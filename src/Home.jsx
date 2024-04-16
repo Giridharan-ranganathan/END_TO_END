@@ -72,6 +72,7 @@ const data = [
   <h1 className='bannerSpanOne'>Lets walk with u r style </h1>
   <p className='bannerSpanTwo'>EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS</p>
 </div>
+<div className='running-Banner'></div>
 <div className='demo mb-10'>
 {data.map((element,index) => (
   <ProductCard 

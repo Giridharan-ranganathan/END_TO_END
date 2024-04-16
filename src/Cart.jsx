@@ -69,7 +69,7 @@ export default function ViewCart() {
                                 <div className="card-body">
                                     <h3 className="product_name">{val.iteam}</h3>
                                     <p className="product_description mb-10">{val.des}</p>
-                                    <p className="product_price mb-10">Price: ${val.price}</p>
+                                    <p className="product_price mb-10">Price: ₹ {val.price}</p>
                                 </div>
                                 <div className="cart-card-foot">
                                     <div><button type="button" className="btn btn-light" onClick={quantityDec}> - </button></div>
@@ -83,7 +83,7 @@ export default function ViewCart() {
                     )}
                 </div>
                 <div className="total-Amount-div">
-                    <h2 className="cart-product-price">Total Amount Rs: $ {totalAmount}</h2>
+                    <h2 className="cart-product-price">Total Amount : ₹  {totalAmount}</h2>
                 </div>
             </div>
         </>

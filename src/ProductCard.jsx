@@ -34,7 +34,7 @@ export const ProductCard = ({service }) => {
       <div className="card-body">
         <h3 className="product_name">{service.iteam}</h3>
         <p className="product_description mb-10">{service.des}</p>
-        <p className="product_price mb-10">${service.price}</p>
+        <p className="product_price mb-10">₹ {service.price}</p>
       </div>
       <div className="addCartBtn text-center">
         { <button
@@ -43,7 +43,8 @@ export const ProductCard = ({service }) => {
           onClick={addToCart}
           ref={textRef}
         >
-          {cart.includes(service) ? 'Remove' : 'Add To Cart'}
+          {/* {cart.includes(service.id) ? 'Remove' : 'Add To Cart'} */}
+          { cart.find(item => item.id === service.id) ? 'Remove' : 'Add To Cart'}
         </button>}
         {/* {cart.includes(service) ? (<button
           type="button"
