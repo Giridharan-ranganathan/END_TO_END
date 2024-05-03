@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import ViewCart from './Cart';
-import Header from './Header';
+import Home from './router/Home';
+import ViewCart from '../src/Components/Cart';
+import Header from './router/Header';
 import { createContext } from 'react'; 
 
 export const CartContext = createContext(); 
