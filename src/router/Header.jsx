@@ -1,8 +1,12 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import {useState} from 'react';
+import {addItemToCart} from '../Redux/Reducer/cart';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Header({cart}) {
  
+  const { cartCount = 0 } =  useSelector((store) => store.cart);
+
     return(
         <>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -31,7 +35,7 @@ export default function Header({cart}) {
     </div>
     <div className='col-lg-3'>
     <Link type="button" className="btn btn-outline-warning" to={"/Cart.jsx"}  
-     ><span><i class="fa-solid fa-cart-shopping"></i></span> Cart <span > - {cart.length} </span></Link>
+     ><span><i class="fa-solid fa-cart-shopping"></i></span> Cart <span > - {cartCount} </span></Link>
       </div>
   </div>
 </nav>

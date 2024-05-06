@@ -5,13 +5,16 @@ const CartSlice = createSlice({
     initialState : {
     items: [],
     total: 0,
+    cartCount : 0,
     },
     reducers: {
       addItemToCart:( state , action) => {
         state.items.push(action.payload);
+        state.cartCount = state.items.length; 
         },
 
         increment: (state, action) => {
+          console.log(action);
             return {
               ...state,
               items: state.items.map((item) => {
