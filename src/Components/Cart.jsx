@@ -9,18 +9,6 @@ export default function ViewCart() {
     const { items = [] , total = 0,} =  useSelector((store) => store.cart);
 
 
-// useEffect(() => {
-//     fetch("http://localhost:5173/product.json")
-//       .then((response) => response.json())
-//       .then((result) => {
-//         dispatcher(saveAllProducts(result.products));
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//   }, []);
- 
-
   useEffect(() => {
     if (items.length > 0) {
       let subTotal = 0;

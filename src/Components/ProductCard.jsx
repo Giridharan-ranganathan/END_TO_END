@@ -2,30 +2,6 @@ import React, { useState, useRef, useContext } from 'react';
 import { CartContext } from '../App';
 
 export default function ProductCard ({
-  
-  // const {cart , setCart} = useContext(CartContext);
-  // const textRef = useRef();
-  
-  // if (!cart) {
-  //   cart = [];
-  // }
-  // const addToCart = () => {
-  //   if (textRef.current.innerText === 'Add To Cart') {
-  //     textRef.current.innerText = 'Remove';
-  //     addCart();
-  //   } else if (textRef.current.innerText === 'Remove') {
-  //     textRef.current.innerText = 'Add To Cart';
-  //     removeCart();
-  //   }
-  // };
-
-  // const addCart = () => {
-  //   setCart([...cart, service]);
-  // };
-
-  // const removeCart = () => {
-  //   setCart(cart.filter((c) => c.id !== service.id));
-  // };
   data = {},
   addToCart = () => {},
   isAddedToCart = false,
@@ -47,9 +23,7 @@ export default function ProductCard ({
           disabled={isAddedToCart}
           onClick={() => addToCart({ ...data, quantity: 1 })}
         >
-          {/* {cart.includes(service.id) ? 'Remove' : 'Add To Cart'} */}
-          {/* { cart.find(item => item.id === service.id) ? 'Remove' : 'Add To Cart'} */}
-          {isAddedToCart ? "Added" : "Add"}
+          {isAddedToCart ? "Remove" : "Add To Cart"}
         </button>}
     
       </div>

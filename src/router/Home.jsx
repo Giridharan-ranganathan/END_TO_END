@@ -24,15 +24,11 @@ export default function Home(){
 
 
   function isAddedToCart(id = 0) {
-    console.log(id);
     // Ensure items is an array before using the find method
     if (!Array.isArray(items)) {
         return false;
     }
-    
     const matchingElement = items.find(item => item.id === id);
-    console.log("helloi in");
-    console.log(matchingElement);
     if (!matchingElement?.id) {
       return false;
     }
